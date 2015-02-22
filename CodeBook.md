@@ -8,71 +8,71 @@ The resulting tidy dataset contains 180 (30 volunteers * 6 activities) observati
 Units: features are normalized and bounded within [-1,1].
 
 ## Variables
-- **subject.id**            : integer representing the volunteer ID
-- **activity.label**        : factor with 6 levels representing the performed activity
-- **tBodyAcc.mean.X**       : number indicating the mean of the time signal of the body acceleration in the X direction
-- **tBodyAcc.mean.Y**       : number indicating the mean of the time signal of the body acceleration in the Y direction
-- **tBodyAcc.mean.Z**       : number indicating the mean of the time signal of the body acceleration in the Z direction
-- **tBodyAcc.std.X**        : number indicating the standard deviation of the time signal of the body acceleration in the X direction
-- **tBodyAcc.std.Y**        : number indicating the standard deviation of the time signal of the body acceleration in the Y direction
-- **tBodyAcc.std.Z**        : number indicating the standard deviation of the time signal of the body acceleration in the Z direction
-- **tGravityAcc.mean.X**    : number indicating the mean of the time signal of the gravity acceleration in the X direction
-- **tGravityAcc.mean.Y**    : number indicating the mean of the time signal of the gravity acceleration in the Y direction
-- **tGravityAcc.mean.Z**    : number indicating the mean of the time signal of the gravity acceleration in the Z direction
-- **tGravityAcc.std.X**     : number indicating the standard deviation of the time signal of the gravity acceleration in the X direction
-- **tGravityAcc.std.Y**     : number indicating the standard deviation of the time signal of the gravity acceleration in the Y direction
-- **tGravityAcc.std.Z**     : number indicating the standard deviation of the time signal of the gravity acceleration in the Z direction
-- **tBodyAccJerk.mean.X**   : number indicating the mean of the Jerk time signal of the body acceleration in the X direction
-- **tBodyAccJerk.mean.Y**   : number indicating the mean of the Jerk time signal of the body acceleration in the Y direction
-- **tBodyAccJerk.mean.Z**   : number indicating the mean of the Jerk time signal of the body acceleration in the Z direction
-- **tBodyAccJerk.std.X**    : number indicating the standard deviation of the Jerk time signal of the body acceleration in the X direction
-- **tBodyAccJerk.std.Y**    : number indicating the standard deviation of the Jerk time signal of the body acceleration in the Y direction
-- **tBodyAccJerk.std.Z**    : number indicating the standard deviation of the Jerk time signal of the body acceleration in the Z direction
-- **tBodyGyro.mean.X**      : number indicating the mean of the time signal of the angular velocity in the X direction
-- **tBodyGyro.mean.Y**      : number indicating the mean of the time signal of the angular velocity in the Y direction
-- **tBodyGyro.mean.Z**      : number indicating the mean of the time signal of the angular velocity in the Z direction
-- **tBodyGyro.std.X**       : number indicating the standard deviation of the time signal of the angular velocity in the X direction
-- **tBodyGyro.std.Y**       : number indicating the standard deviation of the time signal of the angular velocity in the Y direction
-- **tBodyGyro.std.Z**       : number indicating the standard deviation of the time signal of the angular velocity in the Z direction
-- **tBodyGyroJerk.mean.X**  : number indicating the mean of the Jerk time signal of the angular velocity in the X direction
-- **tBodyGyroJerk.mean.Y**  : number indicating the mean of the Jerk time signal of the angular velocity in the Y direction
-- **tBodyGyroJerk.mean.Z**  : number indicating the mean of the Jerk time signal of the angular velocity in the Z direction
-- **tBodyGyroJerk.std.X**   : number indicating the standard deviation of the Jerk time signal of the angular velocity in the X direction
-- **tBodyGyroJerk.std.Y**   : number indicating the standard deviation of the Jerk time signal of the angular velocity in the Y direction
-- **tBodyGyroJerk.std.Z**   : number indicating the standard deviation of the Jerk time signal of the angular velocity in the Z direction
-- **tBodyAccMag.mean**      : number indicating the mean of the time signal of the body acceleration magnitude
-- **tBodyAccMag.std**       : number indicating the standard deviation of the time signal of the body acceleration magnitude
-- **tGravityAccMag.mean**   : number indicating the mean of the time signal of the gravity acceleration magnitude
-- **tGravityAccMag.std**    : number indicating the standard deviation of the time signal of the gravity acceleration magnitude
-- **tBodyAccJerkMag.mean**  : number indicating the mean of the Jerk time signal of the body acceleration magnitude
-- **tBodyAccJerkMag.std**   : number indicating the standard deviation of the Jerk time signal of the body acceleration magnitude
-- **tBodyGyroMag.mean**     : number indicating the mean of the time signal of the angular velocity magnitude
-- **tBodyGyroMag.std**      : number indicating the standard deviation of the time signal of the angular velocity magnitude
-- **tBodyGyroJerkMag.mean** : number indicating the mean of the Jerk time signal of the angular velocity magnitude
-- **tBodyGyroJerkMag.std**  : number indicating the standard deviation of the Jerk time signal of the angular velocity magnitude
-- **fBodyAcc.mean.X**       : number indicating the mean of the frequency signal of the body acceleration in the X direction
-- **fBodyAcc.mean.Y**       : number indicating the mean of the frequency signal of the body acceleration in the Y direction
-- **fBodyAcc.mean.Z**       : number indicating the mean of the frequency signal of the body acceleration in the Z direction
-- **fBodyAcc.std.X**        : number indicating the standard deviation of the frequency signal of the body acceleration in the X direction
-- **fBodyAcc.std.Y**        : number indicating the standard deviation of the frequency signal of the body acceleration in the Y direction
-- **fBodyAcc.std.Z**        : number indicating the standard deviation of the frequency signal of the body acceleration in the Z direction
-- **fBodyAccJerk.mean.X**   : number indicating the mean of the Jerk frequency signal of the body acceleration in the X direction
-- **fBodyAccJerk.mean.Y**   : number indicating the mean of the Jerk frequency signal of the body acceleration in the Y direction
-- **fBodyAccJerk.mean.Z**   : number indicating the mean of the Jerk frequency signal of the body acceleration in the Z direction
-- **fBodyAccJerk.std.X**    : number indicating the standard deviation of the Jerk frequency signal of the body acceleration in the X direction
-- **fBodyAccJerk.std.Y**    : number indicating the standard deviation of the Jerk frequency signal of the body acceleration in the Y direction
-- **fBodyAccJerk.std.Z**    : number indicating the standard deviation of the Jerk frequency signal of the body acceleration in the Z direction
-- **fBodyGyro.mean.X**      : number indicating the mean of the frequency signal of the angular velocity in the X direction
-- **fBodyGyro.mean.Y**      : number indicating the mean of the frequency signal of the angular velocity in the Y direction
-- **fBodyGyro.mean.Z**      : number indicating the mean of the frequency signal of the angular velocity in the Z direction
-- **fBodyGyro.std.X**       : number indicating the standard deviation of the frequency signal of the angular velocity in the X direction
-- **fBodyGyro.std.Y**       : number indicating the standard deviation of the frequency signal of the angular velocity in the Y direction
-- **fBodyGyro.std.Z**       : number indicating the standard deviation of the frequency signal of the angular velocity in the Z direction
-- **fBodyAccMag.mean**      : number indicating the mean of the frequency signal of the body acceleration magnitude
-- **fBodyAccMag.std**       : number indicating the standard deviation of the frequency signal of the body acceleration magnitude
-- **fBodyAccJerkMag.mean**  : number indicating the mean of the Jerk frequency signal of the body acceleration magnitude
-- **fBodyAccJerkMag.std**   : number indicating the standard deviation of the Jerk frequency signal of the body acceleration magnitude
-- **fBodyGyroMag.mean**     : number indicating the mean of the frequency signal of the angular velocity magnitude
-- **fBodyGyroMag.std**      : number indicating the standard deviation of the frequency signal of the angular velocity magnitude
-- **fBodyGyroJerkMag.mean** : number indicating the mean of the Jerk frequency signal of the angular velocity magnitude
-- **fBodyGyroJerkMag.std**  : number indicating the standard deviation of the Jerk frequency signal of the angular velocity magnitude
+- **subjectid** : integer representing the volunteer ID
+- **activitylabel** : factor with 6 levels representing the performed activity
+- **timebodyaccelerationmeanx** : number indicating the mean of the time signal of the body acceleration in the X direction
+- **timebodyaccelerationmeany** : number indicating the mean of the time signal of the body acceleration in the Y direction
+- **timebodyaccelerationmeanz** : number indicating the mean of the time signal of the body acceleration in the Z direction
+- **timebodyaccelerationstandarddeviationx** : number indicating the standard deviation of the time signal of the body acceleration in the X direction
+- **timebodyaccelerationstandarddeviationy** : number indicating the standard deviation of the time signal of the body acceleration in the Y direction
+- **timebodyaccelerationstandarddeviationz** : number indicating the standard deviation of the time signal of the body acceleration in the Z direction
+- **timegravityaccelerationmeanx** : number indicating the mean of the time signal of the gravity acceleration in the X direction
+- **timegravityaccelerationmeany** : number indicating the mean of the time signal of the gravity acceleration in the Y direction
+- **timegravityaccelerationmeanz** : number indicating the mean of the time signal of the gravity acceleration in the Z direction
+- **timegravityaccelerationstandarddeviationx** : number indicating the standard deviation of the time signal of the gravity acceleration in the X direction
+- **timegravityaccelerationstandarddeviationy** : number indicating the standard deviation of the time signal of the gravity acceleration in the Y direction
+- **timegravityaccelerationstandarddeviationz** : number indicating the standard deviation of the time signal of the gravity acceleration in the Z direction
+- **timebodyaccelerationjerkmeanx** : number indicating the mean of the Jerk time signal of the body acceleration in the X direction
+- **timebodyaccelerationjerkmeany** : number indicating the mean of the Jerk time signal of the body acceleration in the Y direction
+- **timebodyaccelerationjerkmeanz** : number indicating the mean of the Jerk time signal of the body acceleration in the Z direction
+- **timebodyaccelerationjerkstandarddeviationx** : number indicating the standard deviation of the Jerk time signal of the body acceleration in the X direction
+- **timebodyaccelerationjerkstandarddeviationy** : number indicating the standard deviation of the Jerk time signal of the body acceleration in the Y direction
+- **timebodyaccelerationjerkstandarddeviationz** : number indicating the standard deviation of the Jerk time signal of the body acceleration in the Z direction
+- **timebodygyromeanx** : number indicating the mean of the time signal of the body angular velocity in the X direction
+- **timebodygyromeany** : number indicating the mean of the time signal of the body angular velocity in the Y direction
+- **timebodygyromeanz** : number indicating the mean of the time signal of the body angular velocity in the Z direction
+- **timebodygyrostandarddeviationx** : number indicating the standard deviation of the time signal of the body angular velocity in the X direction
+- **timebodygyrostandarddeviationy** : number indicating the standard deviation of the time signal of the body angular velocity in the Y direction
+- **timebodygyrostandarddeviationz** : number indicating the standard deviation of the time signal of the body angular velocity in the Z direction
+- **timebodygyrojerkmeanx** : number indicating the mean of the Jerk time signal of the body angular velocity in the X direction
+- **timebodygyrojerkmeany** : number indicating the mean of the Jerk time signal of the body angular velocity in the Y direction
+- **timebodygyrojerkmeanz** : number indicating the mean of the Jerk time signal of the body angular velocity in the Z direction
+- **timebodygyrojerkstandarddeviationx** : number indicating the standard deviation of the Jerk time signal of the body angular velocity in the X direction
+- **timebodygyrojerkstandarddeviationy** : number indicating the standard deviation of the Jerk time signal of the body angular velocity in the Y direction
+- **timebodygyrojerkstandarddeviationz** : number indicating the standard deviation of the Jerk time signal of the body angular velocity in the Z direction
+- **timebodyaccelerationmagnitudemean** : number indicating the mean of the time signal of the body acceleration magnitude
+- **timebodyaccelerationmagnitudestandarddeviation** : number indicating the standard deviation of the time signal of the body acceleration magnitude
+- **timegravityaccelerationmagnitudemean** : number indicating the mean of the time signal of the gravity acceleration magnitude
+- **timegravityaccelerationmagnitudestandarddeviation** : number indicating the standard deviation of the time signal of the gravity acceleration magnitude
+- **timebodyaccelerationjerkmagnitudemean** : number indicating the mean of the Jerk time signal of the body acceleration magnitude
+- **timebodyaccelerationjerkmagnitudestandarddeviation** : number indicating the standard deviation of the Jerk time signal of the body acceleration magnitude
+- **timebodygyromagnitudemean** : number indicating the mean of the time signal of the body angular velocity magnitude
+- **timebodygyromagnitudestandarddeviation** : number indicating the standard deviation of the time signal of the body angular velocity magnitude
+- **timebodygyrojerkmagnitudemean** : number indicating the mean of the Jerk time signal of the body angular velocity magnitude
+- **timebodygyrojerkmagnitudestandarddeviation** : number indicating the standard deviation of the Jerk time signal of the body angular velocity magnitude
+- **frequencybodyaccelerationmeanx** : number indicating the mean of the frequency signal of the body acceleration in the X direction
+- **frequencybodyaccelerationmeany** : number indicating the mean of the frequency signal of the body acceleration in the Y direction
+- **frequencybodyaccelerationmeanz** : number indicating the mean of the frequency signal of the body acceleration in the Z direction
+- **frequencybodyaccelerationstandarddeviationx** : number indicating the standard deviation of the frequency signal of the body acceleration in the X direction
+- **frequencybodyaccelerationstandarddeviationy** : number indicating the standard deviation of the frequency signal of the body acceleration in the Y direction
+- **frequencybodyaccelerationstandarddeviationz** : number indicating the standard deviation of the frequency signal of the body acceleration in the Z direction
+- **frequencybodyaccelerationjerkmeanx** : number indicating the mean of the Jerk frequency signal of the body acceleration in the X direction
+- **frequencybodyaccelerationjerkmeany** : number indicating the mean of the Jerk frequency signal of the body acceleration in the Y direction
+- **frequencybodyaccelerationjerkmeanz** : number indicating the mean of the Jerk frequency signal of the body acceleration in the Z direction
+- **frequencybodyaccelerationjerkstandarddeviationx** : number indicating the standard deviation of the Jerk frequency signal of the body acceleration in the X direction
+- **frequencybodyaccelerationjerkstandarddeviationy** : number indicating the standard deviation of the Jerk frequency signal of the body acceleration in the Y direction
+- **frequencybodyaccelerationjerkstandarddeviationz** : number indicating the standard deviation of the Jerk frequency signal of the body acceleration in the Z direction
+- **frequencybodygyromeanx** : number indicating the mean of the frequency signal of the body angular velocity in the X direction
+- **frequencybodygyromeany** : number indicating the mean of the frequency signal of the body angular velocity in the Y direction
+- **frequencybodygyromeanz** : number indicating the mean of the frequency signal of the body angular velocity in the Z direction
+- **frequencybodygyrostandarddeviationx** : number indicating the standard deviation of the frequency signal of the body angular velocity in the X direction
+- **frequencybodygyrostandarddeviationy** : number indicating the standard deviation of the frequency signal of the body angular velocity in the Y direction
+- **frequencybodygyrostandarddeviationz** : number indicating the standard deviation of the frequency signal of the body angular velocity in the Z direction
+- **frequencybodyaccelerationmagnitudemean** : number indicating the mean of the frequency signal of the body acceleration magnitude
+- **frequencybodyaccelerationmagnitudestandarddeviation** : number indicating the standard deviation of the frequency signal of the body acceleration magnitude
+- **frequencybodyaccelerationjerkmagnitudemean** : number indicating the mean of the Jerk frequency signal of the body acceleration magnitude
+- **frequencybodyaccelerationjerkmagnitudestandarddeviation** : number indicating the standard deviation of the Jerk frequency signal of the body acceleration magnitude
+- **frequencybodygyromagnitudemean** : number indicating the mean of the frequency signal of the body angular velocity magnitude
+- **frequencybodygyromagnitudestandarddeviation** : number indicating the standard deviation of the frequency signal of the body angular velocity magnitude
+- **frequencybodygyrojerkmagnitudemean** : number indicating the mean of the Jerk frequency signal of the body angular velocity magnitude
+- **frequencybodygyrojerkmagnitudestandarddeviation** : number indicating the standard deviation of the Jerk frequency signal of the body angular velocity magnitude

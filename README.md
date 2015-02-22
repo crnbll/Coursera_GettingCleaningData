@@ -40,13 +40,13 @@ It then makes use of the following extracted TXT files:
 - 'UCI HAR Dataset/test/X_test.txt' to retrieve the measurements corresponding to the test data.
 
 ### What the script does
-- Creates a dataframe named 'activity_ids_labels' with the IDs and labels of the activities;
+- Creates a dataframe named 'activity_ids_labels' with the IDs and labels of the activities, replacing the underscores with spaces and translating the uppercase characters to lowercase;
 - Creates a dataframe named 'feature_ids_labels' with the IDs and labels of the features;
 - For both training and test data:
     - Creates a dataframe named 'set_subject_ids' with the IDs of the volunteers corresponding to the partition of the data;
     - Creates a dataframe named 'set_activity_ids' with the IDs of the activities corresponding to the partition of the data;
     - Creates a dataframe named 'set_data' with the measurements corresponding to the partition of the data;
-    - Sets descriptive column names in this dataframe, by using the labels of the dataframe 'feature_ids_labels', after having removed the parenthesis (replaced "()" with "") and the typos (replaced "BodyBody" with "Body") from them;
+    - Sets descriptive column names in this dataframe, by using the labels contained in the dataframe 'feature_ids_labels', and cleaning them by removing the parenthesis and the dots, removing the typos (replacing "BodyBody" with "body"), replacing the abbreviations with the corresponding complete words (replacing the starting "t" with "time", the starting "f" with "frequency", "std" with "standarddeviation", "Acc" with "acceleration" and "Mag" with "magnitude") and translating the uppercase characters to lowercase;
     - Extracts the measurements on the mean and standard deviation, by selecting from the dataframe only the columns which name ends with "mean" or contains either "mean." or "std";
     - Adds the corresponding IDs of volunteers and IDs of activities to the dataframe;
     - Finally, in order to add descriptive activity names to the dataframe, merges it with the dataframe 'activity_ids_labels';
