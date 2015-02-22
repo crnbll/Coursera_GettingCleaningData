@@ -52,7 +52,7 @@ It then makes use of the following extracted TXT files:
     - Finally, in order to add descriptive activity names to the dataframe, merges it with the dataframe 'activity_ids_labels';
 - Combines the training and test dataframes in a single datatable named 'complete_set';
 - Creates another datatable named 'average_set' with the average of each variable for each subject and activity;
-- Removes from this datatable the now useless 'activity.id' column;
-- Orders the datatable by subject.id then by activity.label;
+- Removes from this datatable the now useless 'activityid' column;
+- Orders the datatable by subjectid then by activitylabel;
 - Outputs the datatable to the console;
 - Prints the datatable to the file 'tidy_dataset.txt' created at the root of the working directory.

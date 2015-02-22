@@ -45,21 +45,21 @@ prepare_data <- function(part){
     
     # Clean column names
     colnames(mean_std_set) <- gsub(pattern = "BodyBody", replacement = "body",
-                               x = colnames(mean_std_set))
+                                   x = colnames(mean_std_set))
     colnames(mean_std_set) <- gsub(pattern = "^t", replacement = "time",
-                               x = colnames(mean_std_set))
+                                   x = colnames(mean_std_set))
     colnames(mean_std_set) <- gsub(pattern = "^f", replacement = "frequency",
-                               x = colnames(mean_std_set))
+                                   x = colnames(mean_std_set))
     colnames(mean_std_set) <- gsub(pattern = "std",
                                    replacement = "standarddeviation",
                                    x = colnames(mean_std_set))
     colnames(mean_std_set) <- gsub(pattern = "Acc",
                                    replacement = "acceleration",
-                               x = colnames(mean_std_set))
+                                   x = colnames(mean_std_set))
     colnames(mean_std_set) <- gsub(pattern = "Mag", replacement = "magnitude",
                                    x = colnames(mean_std_set))
     colnames(mean_std_set) <- gsub(pattern = "\\.", replacement = "",
-                               x = colnames(mean_std_set))
+                                   x = colnames(mean_std_set))
     colnames(mean_std_set) <- tolower(x = colnames(mean_std_set))
     
     # Add subject and activity IDs columns to the dataset
