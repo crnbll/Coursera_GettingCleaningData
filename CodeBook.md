@@ -2,10 +2,10 @@
 
 ## Source raw data
 See [University of California Irvine Machine Learning Repository] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  
-Features are normalized and bounded within [-1,1].
 
 ## Computed tidy data
-The resulting tidy dataset contains 180 (30 volunteers * 6 activities) observations of 68 variables.
+The resulting tidy dataset contains 180 (30 volunteers * 6 activities) observations of 68 variables.  
+Units: features are normalized and bounded within [-1,1].
 
 ## Variables
 - **subject.id**            : integer representing the volunteer ID
