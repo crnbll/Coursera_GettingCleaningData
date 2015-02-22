@@ -14,15 +14,15 @@ International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz,
 [University of California Irvine Machine Learning Repository] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ### Contents
-**The repository contains 3 files:  
-- README.md explains how the script works and the transformations performed to clean up the data;  
-- CodeBook.md describes the data and the variables;  
-- run_analysis.R contains the code able to output the desired tidy dataset.**
+**The repository contains 3 files:**  
+**- README.md explains how the script works and the transformations performed to clean up the data;**  
+**- CodeBook.md describes the data and the variables;**  
+**- run_analysis.R contains the code able to output the desired tidy dataset.**
 
 ## How the script works
 
 ### R package requirements
-[data.table] (http://http://cran.r-project.org/web/packages/data.table/)
+[data.table] (http://cran.r-project.org/web/packages/data.table/)
 
 ### Data file requirements
 [UCI HAR Dataset.zip] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
@@ -32,8 +32,8 @@ If the folder 'UCI HAR Dataset' does not exist yet in the working directory, the
 It then makes use of the following extracted TXT files:  
 - 'UCI HAR Dataset/activity_labels.txt' to retrieve the IDs and labels of the activities;  
 - 'UCI HAR Dataset/features.txt' to retrieve the IDs and labels of the features;  
-- 'UCI HAR Dataset/train/subject_train.txt' to retrieve the IDS of the volunteers corresponding to the training data;  
-- 'UCI HAR Dataset/test/subject_test.txt' to retrieve the IDS of the volunteers corresponding to the test data;  
+- 'UCI HAR Dataset/train/subject_train.txt' to retrieve the IDs of the volunteers corresponding to the training data;  
+- 'UCI HAR Dataset/test/subject_test.txt' to retrieve the IDs of the volunteers corresponding to the test data;  
 - 'UCI HAR Dataset/train/y_train.txt' to retrieve the IDs of the activities corresponding to the training data;  
 - 'UCI HAR Dataset/test/y_test.txt' to retrieve the IDs of the activities corresponding to the test data;  
 - 'UCI HAR Dataset/train/X_train.txt' to retrieve the measurements corresponding to the training data;  
@@ -43,7 +43,7 @@ It then makes use of the following extracted TXT files:
 - Creates a dataframe named 'activity_ids_labels' with the IDs and labels of the activities;
 - Creates a dataframe named 'feature_ids_labels' with the IDs and labels of the features;
 - For both training and test data:
-    - Creates a dataframe named 'set_subject_ids' with the IDS of the volunteers corresponding to the partition of the data;
+    - Creates a dataframe named 'set_subject_ids' with the IDs of the volunteers corresponding to the partition of the data;
     - Creates a dataframe named 'set_activity_ids' with the IDs of the activities corresponding to the partition of the data;
     - Creates a dataframe named 'set_data' with the measurements corresponding to the partition of the data;
     - Sets descriptive column names in this dataframe, by using the labels of the dataframe 'feature_ids_labels', after having removed the parenthesis (replaced "()" with "") and the typos (replaced "BodyBody" with "Body") from them;
